@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xu2-Pb-X3N">
+                                <rect key="frame" x="177" y="344" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rhythm Reader" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgI-mp-kwp">
+                                <rect key="frame" x="40" y="30" width="587" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.017578927210000001" green="0.20027317159999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="noteImage" translatesAutoresizingMaskIntoConstraints="NO" id="dQT-n0-mdM">
+                                <rect key="frame" x="156" y="110" width="354" height="223"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dQT-n0-mdM" secondAttribute="bottom" constant="42" id="5YB-91-C5X"/>
+                            <constraint firstItem="dQT-n0-mdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="187" id="9t8-qN-6Nn"/>
+                            <constraint firstItem="dQT-n0-mdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="JtZ-Or-C3N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQT-n0-mdM" secondAttribute="trailing" constant="157" id="NEo-ul-uG7"/>
+                            <constraint firstItem="dQT-n0-mdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="fgc-MY-PqR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQT-n0-mdM" secondAttribute="trailing" constant="157" id="k5L-8b-uid"/>
+                            <constraint firstItem="dgI-mp-kwp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="l7j-Hz-1GC"/>
+                            <constraint firstItem="dQT-n0-mdM" firstAttribute="top" secondItem="dgI-mp-kwp" secondAttribute="bottom" constant="32" id="qe5-Ir-sFA"/>
+                            <constraint firstItem="dgI-mp-kwp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="sLl-e2-2Xj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dgI-mp-kwp" secondAttribute="trailing" constant="40" id="u9v-5A-X1H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQT-n0-mdM" secondAttribute="trailing" constant="188" id="w9r-t9-WP8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NEo-ul-uG7"/>
+                                <exclude reference="w9r-t9-WP8"/>
+                                <exclude reference="9t8-qN-6Nn"/>
+                                <exclude reference="JtZ-Or-C3N"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="xu2-Pb-X3N"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="NEo-ul-uG7"/>
+                                <exclude reference="w9r-t9-WP8"/>
+                                <exclude reference="9t8-qN-6Nn"/>
+                                <exclude reference="JtZ-Or-C3N"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51.724137931034484" y="373.60000000000002"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="noteImage" width="900" height="624"/>
+    </resources>
+</document>
